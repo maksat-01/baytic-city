@@ -4,7 +4,7 @@ import img5 from "../assets/Images/img5.png"
 const OurPartners = () => {
     return (
         <div>
-            <div className="flex ml-[-45%] 7xl:ml-[-30%] 6xl:ml-[-25%] 5xl:ml-[-10%]">
+            <div className="flex ml-[-45%] 7xl: ml-[-30%] 6xl:ml-[-25%] 5xl:ml-[-10%]">
                 <div>
                     <h1 className="text-[43px] font-[100] font-['Patriciana']">Наши партнеры</h1>
                     <p className="w-[366px] h-[154px] font-['Montserrat'] font-extralight text-[16px] mx-[10%] color-[#393939]">Lorem ipsum dolor sit amet consectetur. Lacus odio egestas

@@ -3,7 +3,7 @@ import image from "../assets/Images/img.png";
 import arrow from '../assets/Images/Arrow 2.svg'
 const WatchVideo = () => {
     return (
-        <div className='flex items-center 7xl:ml-[10%] 6xl:ml-[5%] 5xl:ml-[0%] 4xl:ml-[20%]'>
+        <div className='flex items-center 7xl:ml-[10%] 6xl:ml-[5%] 5xl:ml-[0%] 4xl:ml-[-5%]'>
             <div>
                 <img src={image} alt=""/>
             </div>
