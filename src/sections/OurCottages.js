@@ -1,0 +1,41 @@
+import React from 'react';
+import img4 from "../assets/Images/img4.png"
+import {TfiFullscreen} from "react-icons/tfi"
+
+const OurCottages = () => {
+
+
+    return (
+        <div className="5xl:ml-[-65%] 6xl:ml-[0%]">
+            <div className="flex ">
+                <img src={img4} alt=""/>
+                <div className="flex justify-between items-center">
+                    <div>
+                        <div className=" flex flex-col m-10 justify-between items-center">
+                            <div className=" mb-[50%] w-[186px] h-[186px] flex justify-center items-center flex-col  rounded-[50%] bg-[#414141]">
+                                <h1 className="text-white font-[Patriciana] font-thin text-sm">Посмотреть</h1>
+                                <div className="my-2 border-t-2 w-[60px]"></div>
+                                <p className="text-center text-white text-[12px]">Нажмите сюда для <br/>просмотра</p>
+                            </div>
+                            <div className="my-[10%]">
+                                <h2 className="text-[#252525  text-[24px]  text-center">Трехэтажный загородный коттедж с плоской крышей</h2>
+                                <div className="my-8  border-t-4 w-[15rem]"></div>
+                            </div>
+                            <div>
+                                <h3 className="font-[Open Sans] text-[14px] my-4 font-light">2 этажа</h3>
+                                <div className="flex justify-start items-center">
+                                    <TfiFullscreen className="text-[#009EE3] text-base"/>
+                                    <span className="mx-2 text-lg font-[Open Sans] font-semibold font-[24px]">335</span>
+                                    <span className="font-[Open Sans] text-lg font-semibold font-[24px] ">м2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="my-2 mx-[20%] border-r-solid border-r-[1px] w-[1px] h-[400px] border-r-black"></div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default OurCottages;
