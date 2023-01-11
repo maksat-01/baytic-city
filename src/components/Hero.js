@@ -5,8 +5,8 @@ import home from "../assets/Images/home.png"
 
 const Hero = () => {
     return (
-        <div className="flex  ">
-            <img src={home} className="4xl:w-[600px] h-[800px] 5xl:w-[600px] h-[800px] 6xl:w-[832px] h-[800px]" alt=""/>
+        <div className="hero flex ">
+            <img src={home} className="img 4xl:w-[600px] h-[800px] 5xl:w-[600px] h-[800px] 6xl:w-[832px] h-[800px]" alt=""/>
             <div className="m-8 ">
                 <div className="flex  flex-col ">
                     <div className='p-7'>
@@ -19,15 +19,15 @@ const Hero = () => {
                                     fill="#3B76BA"/>
                             </svg>
                         </div>
-                        <div className='pt-40 '>
+                        <div className='pt-40 title'>
                             <h1 className='text-2xl caret-black font-extralight font-[Patriciana] pt-3  '>МЫ
                                 СТРОИМ <br/> БУДУЩЕЕ УЖЕ <br/> СЕГОДНЯ</h1>
                             <p className='font-light  text-sm pb-[2%]  py-[20px] font-[Montserrat] text-[#253659]'>Стабильность
                                 и надежность на
                                 рынке <br/>
                                 строительства</p>
-                            <div className='flex items-center pt-[50px]'>
-                                <button className='text-sm font-extralight cursor-pointer font-[Montserrat]'>Подробнее
+                            <div className='flex hero-p items-center pt-[50px]'>
+                                <button className=' text-sm font-extralight cursor-pointer font-[Montserrat]'>Подробнее
                                 </button>
                                 <HiArrowNarrowRight className='w-8'/>
                             </div>
@@ -35,6 +35,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <img src={home} className="img-item hidden 4xl:w-[600px] h-[800px] 5xl:w-[600px] h-[800px] 6xl:w-[832px] h-[800px]" alt=""/>
         </div>
     );
 };

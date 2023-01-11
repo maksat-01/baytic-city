@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <div className="bg-[#C2C2C2] overflow-hidden h-[403px]">
             <div>
-                <div className="flex justify-around items-center py-[5%]">
+                <div className="footer flex justify-around items-center py-[5%]">
                     <img src={logo4} alt=""/>
-                    <div className="flex">
+                    <div className="flex footer-q">
                         <div className="bg-white m-4   rounded-[50%] w-[48px] text-center h-[48px]">
                             <FaFacebookF className=" ml-[15px] mt-[15px] text-[#B66A20] "/>
                         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
                 <div className="my-10" style={{background: "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #333333", opacity: 0.4, width: "1299px", height: "1px", marginLeft: "8%",
                 }}></div>
-                <span className=" font-['Jost'] text-[18px] font-light not-italic pl-[8%]">Motion Web Studio 2023. All Rights Reserved.</span>
+                <span className="footer-fon font-['Jost'] text-[18px] font-light not-italic pl-[8%]">Motion Web Studio 2023. All Rights Reserved.</span>
             </div>
         </div>
     );
