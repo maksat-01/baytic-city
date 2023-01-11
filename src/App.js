@@ -1,5 +1,4 @@
 import "locomotive-scroll/dist/locomotive-scroll.css";
-
 import { AnimatePresence } from "framer-motion";
 import { useRef} from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
@@ -11,7 +10,6 @@ import Footer from "./sections/Footer";
 
 function App() {
     const containerRef = useRef(null);
-
     return (
         <>
             <LocomotiveScrollProvider
@@ -29,10 +27,10 @@ function App() {
                 }
                 containerRef={containerRef}
             >
-                <main className="App 6xl:pt-[-80%]" data-scroll-container="" ref={containerRef}>
+                <main className="App" data-scroll-container="" ref={containerRef}>
                     <ScrollTriggerProxy />
                     <AnimatePresence>
-                        <Home  key="Shop" />
+                        <Home/>
                         <Request/>
                         <Footer/>
                     </AnimatePresence>

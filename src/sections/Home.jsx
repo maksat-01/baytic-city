@@ -33,7 +33,6 @@ const Right = styled.div`
 const Item = styled(motion.div)`
   display: flex;
   width: 100vw;
-  //margin-right: 8rem;
 `;
 const Home = () => {
 

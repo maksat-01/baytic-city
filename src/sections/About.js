@@ -5,7 +5,7 @@ import {BsPlus} from "react-icons/bs";
 
 const About = () => {
     return (
-        <div className='about 5xl:ml-[-35%] 6xl:ml-[0%] 4xl:ml-[-35%]'>
+        <div id="about" className='about 5xl:ml-[-35%] 6xl:ml-[0%] 4xl:ml-[-35%]'>
             <h1 className='  text-xl mt-10  font-[Patriciana] font-extralight text-[#000000] '>Коротко о нас</h1>
            <div className='flex about-item'>
                <div>

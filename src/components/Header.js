@@ -30,11 +30,10 @@ const Header = () => {
                                 <img className="m-20 " src={logo2} alt=""/>
                             </NavLink>
                             <div className="flex flex-col font-light text-xl text-center color-black">
-                                <NavLink to="/About" className="m-7" href="#">О компании</NavLink>
-                                <NavLink to="/OurCottages" className="m-7" href="#">Коттеджи</NavLink>
-                                <NavLink to="/KeyPersons" className="m-7" href="#">Ключевые люди</NavLink>
-                                <NavLink to="/OurPartners" className="m-7" href="#">Партнеры</NavLink>
-                                <NavLink to="#" className="m-7" href="#">Связаться</NavLink>
+                                <a className="m-7" href="#about">О компании</a>
+                                <a  className="m-7" href="#">Коттеджи</a>
+                                <a className="m-7" href="#">Ключевые люди</a>
+                                <a  className="m-7" href="#">Связаться</a>
                             </div>
                         </div>
                     </div>
