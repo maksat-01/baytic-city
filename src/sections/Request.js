@@ -17,13 +17,13 @@ const Request = () => {
                             <div className="my-10">
                                 <h2 className="my-5">Ваше имя:</h2>
                                 <input  type="text" id="last_name"
-                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm   block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                        placeholder="" required/>
                             </div>
                             <div className="my-10">
                                 <h2 className="my-5">Ваш телефонный номер:</h2>
-                                <input  type="tel" id="phone"
-                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                <input  type="number" id="phone"
+                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm  block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                        placeholder="+996" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
                             </div>
                             <button type="button"
