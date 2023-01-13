@@ -3,14 +3,15 @@ import img6 from "../assets/Images/img6.png"
 
 const Request = () => {
     return (
-        <div className=" ml-[5%]  ">
+        <div id="request" className=" ml-[5%]  ">
             <div className="">
                 <div>
-                    <h1 className="text-[42px] font-light font-[Patriciana]">Оставьте заявку</h1>
+                    <h1 className="text-[42px] font-light font-Patriciana">Оставьте заявку</h1>
                     <p className="font-[Monserrat] text-[18px] mx-[10%] font-extralight w-[366px]">Напишите ваши
                         контактные данные для индивидуальной консультации</p>
                 </div>
                 <div className="flex items-center justify-between">
+
                     <div className="request flex justify-end items-center">
                         <div className="">
                             <div className="my-10">

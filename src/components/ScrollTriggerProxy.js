@@ -13,8 +13,8 @@ const ScrollTriggerProxy = () => {
       ScrollTrigger.scrollerProxy(element, {
         scrollTop(value) {
           return arguments.length
-            ? scroll.scrollTo(value, 0, 0)
-            : scroll.scroll.instance.scroll.y;
+              ? scroll.scrollTo(value, 0, 0)
+              : scroll.scroll.instance.scroll.y;
         },
         getBoundingClientRect() {
           return {

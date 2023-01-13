@@ -1,6 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: Patriciana;
+    src: url(fonts/320-font.otf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(fonts/jost-3-cufonfonts/Jost-Black.ttf);
+}
+
+.swich {
+    height: 705px;
+    width: 160px;
+    margin: 0 auto;
+}
+
+.swich p {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    padding-top: -105px;
+    margin-left: -10%;
+    animation: ani 5s infinite linear;
+    white-space: nowrap;
+    font-family: "Patriciana",sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 111px;
+    color: #000000;
+    rotate: -90deg;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-700%, 0);
+    }
+}
+
+.text {
+    height: 705px;
+    width: 160px;
+    margin: 0 auto;
+}
+
+.text p {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    padding-top: -35px;
+    margin-left: -10%;
+    font-family: "Patriciana",sans-serif;
+    animation: text 5s infinite linear;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 111px;
+    color: #000000;
+    rotate: -90deg;
+}
+
+@keyframes text {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-1000%, 0);
+    }
+}
+
 
 @media (max-width: 992px) {
     .header {
@@ -48,10 +120,12 @@
         flex-direction: column;
         align-items: center;
     }
+
     .our-cottages-team {
         flex-direction: column;
         align-items: center;
     }
+
     .our-cottages-item {
         flex-direction: column;
         align-items: center;
@@ -120,14 +194,17 @@
         flex-direction: column;
         align-items: center;
     }
+
     .our-cottages-team {
         flex-direction: column;
         align-items: center;
     }
+
     .our-cottages-item {
         flex-direction: column;
         align-items: center;
     }
+
     .header {
         width: 330px;
         left: 80px;

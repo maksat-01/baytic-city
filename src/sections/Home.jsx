@@ -17,7 +17,6 @@ import OurCottages2 from "./OurCottages2";
 
 const Section = styled(motion.section)`
   min-height: 100vh;
-  
 `;
 
 const Right = styled.div`
@@ -33,6 +32,7 @@ const Right = styled.div`
 const Item = styled(motion.div)`
   display: flex;
   width: 100vw;
+  
 `;
 const Home = () => {
 

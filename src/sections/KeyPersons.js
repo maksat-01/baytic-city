@@ -5,9 +5,9 @@ import person3 from "../assets/Images/person3.png"
 
 const KeyPersons = () => {
     return (
-        <div >
-            <div className="key ml-[-40%]">
-                <h1 className=" text-xl font-['Patriciana']">Ключевые люди <br/>компании</h1>
+        <div className="flex">
+            <div id="key-person" className="key ml-[-40%]">
+                <h1 className=" text-xl font-Patriciana">Ключевые люди <br/>компании</h1>
                 <div className="flex  items-center">
                     <div>
                         <div className="py-6">
@@ -31,6 +31,10 @@ const KeyPersons = () => {
                         <img src={person3} className="person" alt=""/>
                     </div>
                 </div>
+            </div>
+
+            <div className="swich">
+                <p className="uppercase text-6xl">партнеры</p>
             </div>
         </div>
     );

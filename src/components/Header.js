@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import logo2 from "../assets/Images/logo2.svg";
-import {NavLink} from "react-router-dom";
 
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
             <div >
                 <div className="w-[70px] flex  ">
                     <div  className="flex justify-center items-center absolute top-[50%] m-4">
-                        <div onClick={() => setClick(!click)}  className="cursor-pointer  bg-white fixed  min-h-full w-[80px] left-0 top-0 flex justify-center items-center flex-col">
+                        <div onClick={() => setClick(!click)}  className="cursor-pointer  bg-white fixed  min-h-full w-[70px] h-full left-0 top-0 flex justify-center items-center flex-col">
                             <svg  width="43" height="23" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                 <line  y1={click ? "21.5" : "1.5"} x2="30" y2="1.5" stroke="black" ></line>
                                 {
@@ -25,15 +24,15 @@ const Header = () => {
                     <div   onClick={() => setClick(false)}  style={{
                         display: click ? "block" : "none",
                     }}>
-                        <div className="header bg-white fixed left-[5%] min-h-full w-[100px] flex  items-center flex-col 4xl:w-3/12 3xl:w-3/12">
-                            <NavLink to="/">
+                        <div className="header bg-white fixed left-[4%] min-h-full w-[100px] flex  items-center flex-col 4xl:w-3/12 3xl:w-3/12">
+                            <a href="#hero">
                                 <img className="m-20 " src={logo2} alt=""/>
-                            </NavLink>
+                            </a>
                             <div className="flex flex-col font-light text-xl text-center color-black">
                                 <a className="m-7" href="#about">О компании</a>
-                                <a  className="m-7" href="#">Коттеджи</a>
-                                <a className="m-7" href="#">Ключевые люди</a>
-                                <a  className="m-7" href="#">Связаться</a>
+                                <a  className="m-7" href="#our-cottages">Коттеджи</a>
+                                <a className="m-7" href="#key-person">Ключевые люди</a>
+                                <a  className="m-7" href="#request">Связаться</a>
                             </div>
                         </div>
                     </div>
