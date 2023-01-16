@@ -11,6 +11,56 @@
     src: url(fonts/jost-3-cufonfonts/Jost-Black.ttf);
 }
 
+
+
+.modal-setting {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slick-list {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.modal-content {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-y: scroll;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.52);
+    left: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+
+}
+
 .swich {
     height: 705px;
     width: 160px;
@@ -23,7 +73,7 @@
     margin-left: -10%;
     animation: ani 5s infinite linear;
     white-space: nowrap;
-    font-family: "Patriciana",sans-serif;
+    font-family: "Patriciana", sans-serif;
     font-style: normal;
     font-weight: 250;
     font-size: 111px;
@@ -52,7 +102,7 @@
     /*text-transform: uppercase;*/
     padding-top: -35px;
     margin-left: -10%;
-    font-family: "Patriciana",sans-serif;
+    font-family: "Patriciana", sans-serif;
     animation: text 5s infinite linear;
     white-space: nowrap;
     font-style: normal;

@@ -3,6 +3,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
+
 const ScrollTriggerProxy = () => {
   const { scroll } = useLocomotiveScroll();
   gsap.registerPlugin(ScrollTrigger);
@@ -14,7 +15,7 @@ const ScrollTriggerProxy = () => {
         scrollTop(value) {
           return arguments.length
               ? scroll.scrollTo(value, 0, 0)
-              : scroll.scroll.instance.scroll.y;
+              : scroll.scroll.instance.scroll.y && ""
         },
         getBoundingClientRect() {
           return {

@@ -1,5 +1,4 @@
-import React, {useLayoutEffect,useRef} from 'react';
-import {motion} from "framer-motion";
+import React, {useLayoutEffect, useRef, useState} from 'react';
 import gsap from "gsap"
 import styled from "styled-components"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
@@ -14,8 +13,7 @@ import OurPartners from "./OurPartners";
 import OurCottages1 from "./OurCottages1";
 import OurCottages2 from "./OurCottages2";
 
-
-const Section = styled(motion.section)`
+const Section = styled.section`
   min-height: 100vh;
 `;
 
@@ -27,85 +25,96 @@ const Right = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
 `;
 
-const Item = styled(motion.div)`
+const Item = styled.div`
   display: flex;
   width: 100vw;
-  
+
 `;
 const Home = () => {
 
+    const [last, setLast] = useState(false);
 
-gsap.registerPlugin(ScrollTrigger);
-const ref = useRef(null);
-const all = useRef(null);
-useLayoutEffect(() => {
-    let element = ref.current;
-    let scrollingElement = all.current;
-    let pinWrapWidth = scrollingElement.offsetWidth;
-    let t1 = gsap.timeline();
-    setTimeout(() => {
-        t1.to(element, {
-            scrollTrigger: {
-                trigger: element,
-                start: "top top",
-                end: `${pinWrapWidth} bottom`,
-                scroller: ".App",
-                scrub: 1,
-                pin: true,
-            },
-            height: `${scrollingElement.scrollWidth}px`,
-            ease: "none",
-        });
-        t1.to(scrollingElement, {
-            scrollTrigger: {
-                trigger: scrollingElement,
-                start: "top top",
-                end: `${pinWrapWidth} bottom`,
-                scroller: ".App",
-                scrub: 1,
-            },
-            x: -pinWrapWidth,
-            ease: "none",
-        });
-    }, 1000);
-}, []);
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    const all = useRef(null);
+    // const we = useRef(null)
+    useLayoutEffect(() => {
+        let element = ref.current;
+        let scrollingElement = all.current;
+        let pinWrapWidth = scrollingElement.offsetWidth;
+        let t1 = gsap.timeline();
+        setTimeout(() => {
+            t1.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top top",
+                    scroller: ".App",
+                    invalidateOnRefresh: true,
+                    // onUpdate: () =>pinWrapWidth.pause(),
+                    scrub: 1,
+                    pin: true,
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                height: scrollingElement,
+                ease: "none",
+            });
+            t1.to(scrollingElement, {
+                scrollTrigger: {
+                    trigger: scrollingElement,
+                    start: "top top",
+                    scroller: ".App",
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                x: -pinWrapWidth,
+                ease: "none",
+            });
+            return () => {
+                t1.kill();
+            };
+        }, 1000);
+    }, []);
 
     return (
         <div>
-             <Section ref={ref}  id="home">
-                 <div>
+            <Section ref={ref} id="home">
+                <div>
                     <Header/>
                 </div>
-                <Right  data-scroll ref={all}>
+                <Right data-scroll ref={all}>
                     <Item>
-                         <Hero/>
-                     </Item>
-                    <Item>
-                     <WatchVideo/>
-                   </Item>
-                    <Item>
-                         <Video/>
-                     </Item>
-                     <Item>
-                         <About/>
+                        <Hero/>
                     </Item>
-                     <Item>
-                         <OurCottages/>
-                     </Item>
-                     <Item>
-                             <OurCottages1/>
-                     </Item>
-                     <Item>
-                             <OurCottages2/>
-                     </Item>
-                     <Item>
-                         <KeyPersons/>
-                     </Item>
-                     <Item>
-                         <OurPartners/>
-                  </Item>
+                    <Item>
+                        <WatchVideo/>
+                    </Item>
+                    <Item>
+                        <Video/>
+                    </Item>
+                    <Item>
+                        <About/>
+                    </Item>
+                    <Item>
+                        <OurCottages/>
+                    </Item>
+                    <Item>
+                        <OurCottages1/>
+                    </Item>
+                    <Item>
+                        <OurCottages2/>
+                    </Item>
+                    <Item>
+                        <KeyPersons/>
+                    </Item>
+                    <Item>
+                        <OurPartners />
+                    </Item>
                 </Right>
             </Section>
         </div>
