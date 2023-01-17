@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import img5 from "../assets/Images/img5.png"
 
 const OurPartners = () => {
 
+useEffect(() => {
+
+},[])
     return (
         <div className=" ">
             <div className="partners flex ml-[-45%] 7xl: ml-[-30%] 6xl:ml-[-25%] 5xl:ml-[-10%] 4xl:ml-[-5%]">

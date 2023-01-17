@@ -1,4 +1,5 @@
 import React, {useLayoutEffect, useRef} from 'react';
+import React, {useLayoutEffect, useRef, useState} from 'react';
 import gsap from "gsap"
 import styled from "styled-components"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
@@ -72,12 +73,51 @@ const Home = () => {
                     invalidateOnRefresh: true,
                     // pinSpacing: false,
 
+
+    const [last, setLast] = useState(false);
+
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    const all = useRef(null);
+    // const we = useRef(null)
+    useLayoutEffect(() => {
+        let element = ref.current;
+        let scrollingElement = all.current;
+        let pinWrapWidth = scrollingElement.offsetWidth;
+        let t1 = gsap.timeline();
+        setTimeout(() => {
+            t1.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top top",
+                    scroller: ".App",
+                    invalidateOnRefresh: true,
+                    // onUpdate: () =>pinWrapWidth.pause(),
+                    scrub: 1,
+                    pin: true,
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                height: scrollingElement,
+                ease: "none",
+            });
+            t1.to(scrollingElement, {
+                scrollTrigger: {
+                    trigger: scrollingElement,
+                    start: "top top",
+                    scroller: ".App",
+                    scrub: 1,
+                    invalidateOnRefresh: true,
                     markers: true,
                     end: `${pinWrapWidth} bottom`
                 },
                 x: -pinWrapWidth,
                 ease: "none",
             });
+
+            return () => {
+                t1.kill();
+            };
         }, 1000);
     }, []);
 
@@ -108,6 +148,23 @@ const Home = () => {
                     </Item>
                     <Item>
                         <OurCottages2/>
+                    <Item>
+                        <Video/>
+                    </Item>
+                    <Item>
+                        <About/>
+                    </Item>
+                    <Item>
+                        <OurCottages/>
+                    </Item>
+                    <Item>
+                        <OurCottages1/>
+                    </Item>
+                    <Item>
+                        <OurCottages2/>
+                    </Item>
+                    <Item>
+                        <KeyPersons/>
                     </Item>
                     <Item>
                         <OurPartners />
