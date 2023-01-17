@@ -8,9 +8,8 @@ import ModalWindow from "./ModalWindow/ModalWindow";
 const OurCottages = () => {
     const [modal, setModal] = useState(false)
 
-
     return (
-        <div className="flex " >
+        <div className="flex ">
             <div className="text">
                 <p className=" text-6xl">Наши коттеджи</p>
             </div>

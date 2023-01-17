@@ -6,7 +6,7 @@ import person3 from "../assets/Images/person3.png"
 const KeyPersons = () => {
     return (
         <div className="flex">
-            <div id="key-person" className="key ml-[-40%]">
+            <div id="key-person" className="key mt-[-70%] ml-[10%]">
                 <h1 className=" text-xl font-Patriciana">Ключевые люди <br/>компании</h1>
                 <div className="flex  items-center">
                     <div>
@@ -33,9 +33,6 @@ const KeyPersons = () => {
                 </div>
             </div>
 
-            <div className="swich">
-                <p className="uppercase text-6xl">партнеры</p>
-            </div>
         </div>
     );
 };

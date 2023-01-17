@@ -3,7 +3,7 @@ import img6 from "../assets/Images/img6.png"
 
 const Request = () => {
     return (
-        <div id="request" className=" ml-[5%]  ">
+        <div  id="request" className=" ml-[5%] ">
             <div className="">
                 <div>
                     <h1 className="text-[42px] font-light font-Patriciana">Оставьте заявку</h1>
