@@ -6,6 +6,8 @@ import Home from "./sections/Home";
 import Request from "./sections/Request";
 import Footer from "./sections/Footer";
 import GlobalStyles from "./styles/GlobalStyles";
+import KeyPersons from "./sections/KeyPersons";
+import React from "react";
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
                 <main className="App " data-scroll-container="" ref={containerRef}>
                     <ScrollTriggerProxy/>
                     <Home/>
+                    <KeyPersons/>
+
                     <Request/>
                     <Footer/>
                 </main>

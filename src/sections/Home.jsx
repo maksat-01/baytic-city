@@ -1,3 +1,4 @@
+import React, {useLayoutEffect, useRef} from 'react';
 import React, {useLayoutEffect, useRef, useState} from 'react';
 import gsap from "gsap"
 import styled from "styled-components"
@@ -19,6 +20,7 @@ const Section = styled.section`
 
 const Right = styled.div`
   position: absolute;
+  top: 0;
   left: 5%;
   min-height: 100vh;
   z-index: -1;
@@ -34,6 +36,43 @@ const Item = styled.div`
 
 `;
 const Home = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    const all = useRef(null);
+    // const we = useRef(null)
+    useLayoutEffect(() => {
+        let element = ref.current;
+        let scrollingElement = all.current;
+        let pinWrapWidth = scrollingElement.offsetWidth;
+        let t1 = gsap.timeline();
+        setTimeout(() => {
+            t1.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top top",
+                    scroller: ".App",
+                    invalidateOnRefresh: true,
+                    // onUpdate: () => scrollingElement.pause(),
+                    // onUpdate: () => {
+                    //     gsap.set(scrollingElement.pause())
+                    // },
+                    scrub: 1,
+                    pin: true,
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                height: scrollingElement,
+                ease: "none",
+            });
+            t1.to(scrollingElement, {
+                scrollTrigger: {
+                    trigger: scrollingElement,
+                    start: "top top",
+                    scroller: ".App",
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                    // pinSpacing: false,
+
 
     const [last, setLast] = useState(false);
 
@@ -75,6 +114,7 @@ const Home = () => {
                 x: -pinWrapWidth,
                 ease: "none",
             });
+
             return () => {
                 t1.kill();
             };
@@ -94,6 +134,20 @@ const Home = () => {
                     <Item>
                         <WatchVideo/>
                     </Item>
+                    <Item>
+                        <Video/>
+                    </Item>
+                    <Item>
+                        <About/>
+                    </Item>
+                    <Item>
+                        <OurCottages />
+                    </Item>
+                    <Item>
+                        <OurCottages1/>
+                    </Item>
+                    <Item>
+                        <OurCottages2/>
                     <Item>
                         <Video/>
                     </Item>
