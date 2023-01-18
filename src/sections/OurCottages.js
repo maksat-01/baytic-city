@@ -3,7 +3,6 @@ import img4 from "../assets/Images/img4.png"
 import cottages from "../assets/Images/cottages.png"
 import {TfiFullscreen} from "react-icons/tfi"
 import ModalWindow from "./ModalWindow/ModalWindow";
-<<<<<<< HEAD
 
 
 const OurCottages = () => {
@@ -11,18 +10,6 @@ const OurCottages = () => {
 
     return (
         <div className="flex our-cottages">
-=======
-
-const OurCottages = () => {
-    const [modal, setModal] = useState(false)
-
-const OurCottages = () => {
-    const [modal, setModal] = useState(false)
-
-    return (
-        <div className="flex ">
-        <div className="flex " >
->>>>>>> 9dfeb97a45c0ec11abc631f620b7c5a1bd500742
             <div className="text">
                 <p className=" text-6xl">Наши коттеджи</p>
             </div>
