@@ -9,13 +9,13 @@ const OurCottages = () => {
     const [modal, setModal] = useState(false)
 
     return (
-        <div className="flex ">
+        <div className="flex our-cottages">
             <div className="text">
                 <p className=" text-6xl">Наши коттеджи</p>
             </div>
             <div id="our-cottages" className="4xl:ml-[-50%] 5xl:ml-[-65%] 6xl:ml-[0%]">
                 <div className="flex our-cottages">
-                    <img src={img4} className="foto" alt=""/>
+                    <img src={img4} className="foto w-[607px] h-[739px]" alt=""/>
                     <div className=" flex justify-between items-center">
                         <div className="our-item">
                             <div className=" flex  flex-col m-10 justify-between items-center">
@@ -25,7 +25,7 @@ const OurCottages = () => {
                                         загородный коттедж с плоской крышей</h2>
                                     <div className="line-q my-8  border-t-4 w-[15rem]"></div>
                                 </div>
-                                <div>
+                                <div className="two">
                                     <h3 className="font-[Open Sans] text-[14px] my-4 font-light">2 этажа</h3>
                                     <div className="flex justify-start items-center">
                                         <TfiFullscreen className="text-[#009EE3] text-base"/>
@@ -52,8 +52,8 @@ const OurCottages = () => {
                                         <p className="text-center text-white text-[12px]">Нажмите сюда для <br/>просмотра
                                         </p>
                                     </div>
-                                    <div>
-                                        <h3 className="font-[Open Sans] text-[14px] my-4 font-light">2 этажа</h3>
+                                    <div className="two">
+                                        <h3 className="font-[Open Sans] two-second text-[14px] my-4 font-light">2 этажа</h3>
                                         <div className="flex justify-start items-center">
                                             <TfiFullscreen className="text-[#009EE3] text-base"/>
                                             <span

@@ -5,10 +5,10 @@ import person3 from "../assets/Images/person3.png"
 
 const KeyPersons = () => {
     return (
-        <div className="flex">
-            <div id="key-person" className="key mt-[-70%] ml-[10%]">
+        <div className="ke flex">
+            <div  className="key mt-[-70%] ml-[10%]">
                 <h1 className=" text-xl font-Patriciana">Ключевые люди <br/>компании</h1>
-                <div className="flex  items-center">
+                <div className="flex key-person  items-center">
                     <div>
                         <div className="py-6">
                             <h2 className="text-base font-normal font-[Montserrat]">Алымкулова Мира</h2>

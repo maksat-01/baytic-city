@@ -8,7 +8,6 @@ import WatchVideo from "./WatchVideo";
 import Video from "./Video";
 import About from "./About";
 import OurCottages from "./OurCottages";
-import KeyPersons from "./KeyPersons";
 import OurPartners from "./OurPartners";
 import OurCottages1 from "./OurCottages1";
 import OurCottages2 from "./OurCottages2";
@@ -32,13 +31,11 @@ const Right = styled.div`
 const Item = styled.div`
   display: flex;
   width: 100vw;
-
 `;
 const Home = () => {
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
     const all = useRef(null);
-    // const we = useRef(null)
     useLayoutEffect(() => {
         let element = ref.current;
         let scrollingElement = all.current;

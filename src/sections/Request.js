@@ -3,7 +3,7 @@ import img6 from "../assets/Images/img6.png"
 
 const Request = () => {
     return (
-        <div  id="request" className=" ml-[5%] ">
+        <div className=" ml-[5%] ">
             <div className="">
                 <div>
                     <h1 className="text-[42px] font-light font-Patriciana">Оставьте заявку</h1>
@@ -17,14 +17,14 @@ const Request = () => {
                             <div className="my-10">
                                 <h2 className="my-5">Ваше имя:</h2>
                                 <input  type="text" id="last_name"
-                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm   block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                       className="request-input bg-white border border-black text-black text-sm   block w-full py-[15px] px-[60px] p-1.5 dark:bg-black dark:border-black dark:placeholder-black dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                        placeholder="" required/>
                             </div>
                             <div className="my-10">
                                 <h2 className="my-5">Ваш телефонный номер:</h2>
                                 <input  type="number" id="phone"
-                                       className="request-input bg-gray-50 border border-gray-300 text-gray-900 text-sm  block w-full py-[15px] px-[60px] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                       placeholder="+996" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+                                        className="request-input bg-white border border-black text-black text-sm   block w-full py-[15px] px-[60px] p-1.5 dark:bg-black dark:border-black dark:placeholder-black dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="+996" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
                             </div>
                             <button type="button"
                                     className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200  rounded-lg text-sm px-[30px] py-[10px] dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Отправить
