@@ -22,7 +22,7 @@ const ModalWindow = ({setModal, modal}) => {
             repeat: -1,
             yoyo: true,
             ease: 'easeOut',
-            duration: 5,
+            duration: 1,
         })
     }, [])
 
@@ -38,12 +38,10 @@ const ModalWindow = ({setModal, modal}) => {
                 style={{
                     transform: modal ? "translateY(-23rem)" : "translateY(0)",
                     transition: ".4s",
-
                 }}>
                 <div className="modal" style={{
                     display: modal ? "block" : "none",
                 }}>
-
                     <div className="modal-content">
                         <div className="flex justify-evenly items-center">
                             <img src={img7} alt=""/>
@@ -169,7 +167,6 @@ const ModalWindow = ({setModal, modal}) => {
                         </div>
                         <h1 className="text-center text-lg" onClick={() => setModal(!modal)}>close</h1>
                     </div>
-
                 </div>
             </div>
         </div>
