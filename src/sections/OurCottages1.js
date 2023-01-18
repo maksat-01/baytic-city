@@ -7,9 +7,9 @@ const OurCottages = () => {
 
 
     return (
-        <div className="4xl:ml-[-50%] 5xl:ml-[-65%] 6xl:ml-[-20%]">
-            <div className="flex our-cottages-team">
-                <img src={img4} className="foto" alt=""/>
+        <div className=" 4xl:ml-[-50%] 5xl:ml-[-65%] 6xl:ml-[-20%]">
+            <div className="flex ml-[25%] our-cottages-team">
+                <img src={img4} className="foto " alt=""/>
                 <div className="flex justify-between items-center">
 
                     <div className="our-item">
@@ -23,7 +23,7 @@ const OurCottages = () => {
                                 <h2 className="text-[#252525 our-text  text-[24px]  text-center">Трехэтажный загородный коттедж с плоской крышей</h2>
                                 <div className="line-q my-8  border-t-4 w-[15rem]"></div>
                             </div>
-                            <div>
+                            <div >
                                 <h3 className="font-[Open Sans] text-[14px] my-4 font-light">2 этажа</h3>
                                 <div className="flex justify-start items-center">
                                     <TfiFullscreen className="text-[#009EE3] text-base"/>
@@ -46,8 +46,8 @@ const OurCottages = () => {
                                     <div className="my-2 border-t-2 w-[60px]"></div>
                                     <p className="text-center text-white text-[12px]">Нажмите сюда для <br/>просмотра</p>
                                 </div>
-                                <div>
-                                    <h3 className="font-[Open Sans] text-[14px] my-4 font-light">2 этажа</h3>
+                                <div className="two">
+                                    <h3 className="font-[Open Sans] two-second text-[14px] my-4 font-light">2 этажа</h3>
                                     <div className="flex justify-start items-center">
                                         <TfiFullscreen className="text-[#009EE3] text-base"/>
                                         <span className="mx-2 text-lg font-[Open Sans] font-semibold font-[24px]">335</span>

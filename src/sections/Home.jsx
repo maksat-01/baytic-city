@@ -1,3 +1,4 @@
+import React, {useLayoutEffect, useRef} from 'react';
 import React, {useLayoutEffect,useRef} from 'react';
 import {motion} from "framer-motion";
 import gsap from "gsap"
@@ -9,7 +10,6 @@ import WatchVideo from "./WatchVideo";
 import Video from "./Video";
 import About from "./About";
 import OurCottages from "./OurCottages";
-import KeyPersons from "./KeyPersons";
 import OurPartners from "./OurPartners";
 import OurCottages1 from "./OurCottages1";
 import OurCottages2 from "./OurCottages2";
@@ -33,6 +33,53 @@ const Right = styled.div`
 const Item = styled(motion.div)`
   display: flex;
   width: 100vw;
+`;
+const Home = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    const all = useRef(null);
+    useLayoutEffect(() => {
+        let element = ref.current;
+        let scrollingElement = all.current;
+        let pinWrapWidth = scrollingElement.offsetWidth;
+        let t1 = gsap.timeline();
+        setTimeout(() => {
+            t1.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top top",
+                    scroller: ".App",
+                    invalidateOnRefresh: true,
+                    // onUpdate: () => scrollingElement.pause(),
+                    // onUpdate: () => {
+                    //     gsap.set(scrollingElement.pause())
+                    // },
+                    scrub: 1,
+                    pin: true,
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                height: scrollingElement,
+                ease: "none",
+            });
+            t1.to(scrollingElement, {
+                scrollTrigger: {
+                    trigger: scrollingElement,
+                    start: "top top",
+                    scroller: ".App",
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                    // pinSpacing: false,
+
+                    markers: true,
+                    end: `${pinWrapWidth} bottom`
+                },
+                x: -pinWrapWidth,
+                ease: "none",
+            });
+        }, 1000);
+    }, []);
+=======
   //margin-right: 8rem;
 `;
 const Home = () => {
@@ -84,6 +131,14 @@ useLayoutEffect(() => {
                          <Hero/>
                      </Item>
                     <Item>
+                        <OurCottages />
+                    </Item>
+                    <Item>
+                        <OurCottages1/>
+                    </Item>
+                    <Item>
+                        <OurCottages2/>
+                    </Item>
                      <WatchVideo/>
                    </Item>
                     <Item>

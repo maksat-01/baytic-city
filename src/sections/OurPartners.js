@@ -2,6 +2,13 @@ import React from 'react';
 import img5 from "../assets/Images/img5.png"
 
 const OurPartners = () => {
+
+    return (
+        <div className="flex ml-[-25%]">
+            <div className="swich ml-[-5%]">
+                <p className="uppercase text-6xl">партнеры</p>
+            </div>
+            <div className="partners flex ml-[-65%] 7xl: ml-[-30%] 6xl:ml-[-25%] 5xl:ml-[-10%] 4xl:ml-[-5%]">
     return (
         <div>
             <div className="partners flex ml-[-45%] 7xl: ml-[-30%] 6xl:ml-[-25%] 5xl:ml-[-10%] 4xl:ml-[-5%]">

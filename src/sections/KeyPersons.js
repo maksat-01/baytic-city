@@ -5,6 +5,10 @@ import person3 from "../assets/Images/person3.png"
 
 const KeyPersons = () => {
     return (
+        <div className="ke flex">
+            <div  className="key mt-[-70%] ml-[10%]">
+                <h1 className=" text-xl font-Patriciana">Ключевые люди <br/>компании</h1>
+                <div className="flex key-person  items-center">
         <div >
             <div className="key ml-[-40%]">
                 <h1 className=" text-xl font-['Patriciana']">Ключевые люди <br/>компании</h1>

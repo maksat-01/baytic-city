@@ -5,12 +5,17 @@ import home from "../assets/Images/home.png"
 
 const Hero = () => {
     return (
+        <div  className="hero flex border-r-solid border-r-[3px] border-r-black mr-[200px] ">
+            <img src={home} className="img 4xl:w-[600px] h-[800px] 5xl:w-[600px] h-[800px] 6xl:w-[832px] h-[800px]"
+                 alt=""/>
         <div className="hero flex ">
             <img src={home} className="img 4xl:w-[600px] h-[800px] 5xl:w-[600px] h-[800px] 6xl:w-[832px] h-[800px]" alt=""/>
             <div className="m-8 ">
                 <div className="flex  flex-col ">
                     <div className='p-7'>
                         <div>
+                            <svg className="my-[-14px] logo-3" width="224" height="33" viewBox="0 0 224 33" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
                             <svg className="my-[-14px]" width="224" height="33" viewBox="0 0 224 33" fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
                             >
@@ -20,6 +25,10 @@ const Hero = () => {
                             </svg>
                         </div>
                         <div className='pt-40 title'>
+                            <h1 className='text-2xl caret-black font-extralight font-sans pt-3'>МЫ
+                                СТРОИМ  БУДУЩЕЕ УЖЕ  СЕГОДНЯ</h1>
+                            <p className='font-light  text-sm pb-[2%]  py-[20px] font-[Montserrat] text-gray-800'>Стабильность
+                                и надежность на рынке
                             <h1 className='text-2xl caret-black font-extralight font-[Patriciana] pt-3  '>МЫ
                                 СТРОИМ <br/> БУДУЩЕЕ УЖЕ <br/> СЕГОДНЯ</h1>
                             <p className='font-light  text-sm pb-[2%]  py-[20px] font-[Montserrat] text-[#253659]'>Стабильность
@@ -29,7 +38,7 @@ const Hero = () => {
                             <div className='flex hero-p items-center pt-[50px]'>
                                 <button className=' text-sm font-extralight cursor-pointer font-[Montserrat]'>Подробнее
                                 </button>
-                                <HiArrowNarrowRight className='w-8'/>
+                                <HiArrowNarrowRight className='w-8 rotate-90'/>
                             </div>
                         </div>
                     </div>
