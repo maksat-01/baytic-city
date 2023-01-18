@@ -9,6 +9,10 @@ const KeyPersons = () => {
             <div  className="key mt-[-70%] ml-[10%]">
                 <h1 className=" text-xl font-Patriciana">Ключевые люди <br/>компании</h1>
                 <div className="flex key-person  items-center">
+        <div >
+            <div className="key ml-[-40%]">
+                <h1 className=" text-xl font-['Patriciana']">Ключевые люди <br/>компании</h1>
+                <div className="flex  items-center">
                     <div>
                         <div className="py-6">
                             <h2 className="text-base font-normal font-[Montserrat]">Алымкулова Мира</h2>
@@ -32,7 +36,6 @@ const KeyPersons = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

@@ -47,8 +47,7 @@ module.exports = {
         "6xl": ["clamp(2.57rem, calc(0.78rem + 8.95vw), 7.15rem)", "1"],
       },
       fontFamily: {
-        sans: "Patriciana",
-        serif: "Jost"
+        body: ['Montserrat','Patriciana', 'sans-serif'],
       }
     },
   },

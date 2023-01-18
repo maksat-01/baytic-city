@@ -213,12 +213,10 @@
         flex-direction: column;
         align-items: center;
     }
-
     .our-cottages-team {
         flex-direction: column;
         align-items: center;
     }
-
     .our-cottages-item {
         flex-direction: column;
         align-items: center;
@@ -287,17 +285,14 @@
         flex-direction: column;
         align-items: center;
     }
-
     .our-cottages-team {
         flex-direction: column;
         align-items: center;
     }
-
     .our-cottages-item {
         flex-direction: column;
         align-items: center;
     }
-
     .header {
         width: 330px;
         left: 80px;

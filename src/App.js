@@ -1,20 +1,19 @@
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import {useRef} from "react";
-import {LocomotiveScrollProvider} from "react-locomotive-scroll";
+
+import { AnimatePresence } from "framer-motion";
+import { useRef} from "react";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 import Home from "./sections/Home";
 import Request from "./sections/Request";
 import Footer from "./sections/Footer";
-import GlobalStyles from "./styles/GlobalStyles";
-import KeyPersons from "./sections/KeyPersons";
-import React from "react";
 
 
 function App() {
     const containerRef = useRef(null);
+
     return (
         <>
-            <GlobalStyles/>
             <LocomotiveScrollProvider
                 options={{
                     smooth: true,
@@ -36,6 +35,13 @@ function App() {
                     <KeyPersons/>
                     <Request/>
                     <Footer/>
+                <main className="App 6xl:pt-[-80%]" data-scroll-container="" ref={containerRef}>
+                    <ScrollTriggerProxy />
+                    <AnimatePresence>
+                        <Home  key="Shop" />
+                        <Request/>
+                        <Footer/>
+                    </AnimatePresence>
                 </main>
             </LocomotiveScrollProvider>
         </>
