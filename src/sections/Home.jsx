@@ -31,6 +31,7 @@ const Right = styled.div`
 const Item = styled.div`
   display: flex;
   width: 100vw;
+
 `;
 const Home = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -68,16 +69,10 @@ const Home = () => {
                     scrub: 1,
                     invalidateOnRefresh: true,
                     // pinSpacing: false,
-
-                    markers: true,
-                    end: `${pinWrapWidth} bottom`
-                },
-                x: -pinWrapWidth,
-                ease: "none",
-            });
-        }, 1000);
-    }, []);
-
+                }
+            })
+        })
+    }, [scroll])
     return (
         <div>
             <Section ref={ref} id="home">
@@ -98,7 +93,7 @@ const Home = () => {
                         <About/>
                     </Item>
                     <Item>
-                        <OurCottages />
+                        <OurCottages/>
                     </Item>
                     <Item>
                         <OurCottages1/>
@@ -107,7 +102,7 @@ const Home = () => {
                         <OurCottages2/>
                     </Item>
                     <Item>
-                        <OurPartners />
+                        <OurPartners/>
                     </Item>
                 </Right>
             </Section>

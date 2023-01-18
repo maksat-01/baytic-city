@@ -60,7 +60,9 @@ const OurCottages = () => {
                     <div className="ul my-2 mx-[20%] border-r-solid border-r-[1px] w-[1px] h-[400px] border-r-black"></div>
                 </div>
                 <img src={cottages} className="foto-see hidden" alt=""/>
-
+                <div className="swich">
+                    <p className="uppercase text-6xl">партнеры</p>
+                </div>
             </div>
         </div>
     );
